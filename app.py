@@ -576,7 +576,7 @@ else:
                     st.markdown("---")
                     col_img1, col_img2, col_img3 = st.columns([1, 6, 1])
                     with col_img2:
-                        st.image(image, caption=f'Uploaded X-ray • {image.size[0]}×{image.size[1]} pixels', use_container_width=stretch)
+                        st.image(image, caption=f'Uploaded X-ray • {image.size[0]}×{image.size[1]} pixels', width="stretch")
                     
                     # Image Statistics
                     col_stats1, col_stats2, col_stats3 = st.columns(3)
