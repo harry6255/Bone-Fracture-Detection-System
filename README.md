@@ -39,9 +39,6 @@ The project delivers an **end-to-end pipeline**:
 
 ## 🔬 Pipeline Architecture
 
-<p align="center">
-  <img src="assets/pipeline.png" width="800"/>
-</p>
 
 **Pipeline Explanation:**
 1. X-ray image upload  
