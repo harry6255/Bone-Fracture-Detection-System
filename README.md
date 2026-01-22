@@ -37,10 +37,6 @@ The project delivers an **end-to-end pipeline**:
 
 ---
 
-## 🧠 System Architecture
-<p align="center">
-  <img src="assets/architecture.png" width="750"/>
-</p>
 
 **Pipeline Explanation:**
 1. X-ray image upload  
@@ -63,3 +59,141 @@ The project delivers an **end-to-end pipeline**:
 ---
 
 ## 📁 Project Structure
+Bone-Fracture-Detection/
+│
+├── app.py # Streamlit application
+├── train.py # Model training script
+├── dataset.py # Custom PyTorch dataset
+├── best_model.pth # Trained model weights
+├── requirements.txt
+├── README.md
+
+
+---
+
+## ⚙️ Methodology
+
+### Model Architecture
+- Backbone: **ResNet-18**
+- Pretrained on ImageNet
+- Custom fully connected classifier for binary classification
+
+### Why Recall Optimization?
+- False negatives are dangerous in healthcare
+- Screening systems must prioritize sensitivity
+- Model selection is based on **fracture recall**, not accuracy
+
+---
+
+## 📊 Results
+
+### Quantitative Performance
+| Class       | Precision | Recall | F1-score |
+|------------|----------|--------|----------|
+| Normal     | 0.94     | 0.84   | 0.88     |
+| Fractured  | 0.49     | 0.75   | 0.60     |
+
+- **Overall Accuracy:** 82%
+- **Fracture Recall (Sensitivity):** 75%
+
+<p align="center">
+  <img src="assets/confusion_matrix.png" width="450"/>
+</p>
+
+---
+
+## 🚀 Live Demo
+<p align="center">
+  <img src="assets/demo.gif" width="800"/>
+</p>
+
+### Run Locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+Features:
+
+Upload X-ray image
+
+Automatic preprocessing
+
+Real-time prediction
+
+Confidence score visualization
+
+🔁 Reproducibility
+
+This project follows best practices for reproducible research:
+
+Fixed preprocessing pipeline
+
+Explicit model architecture
+
+Public benchmark dataset
+
+Saved trained weights
+
+Documented hyperparameters
+
+⚠️ Limitations
+
+Binary classification only
+
+Single-view X-rays
+
+No localization or explainability
+
+Limited clinical validation
+
+🔮 Future Work
+
+Grad-CAM visual explanations
+
+Multi-bone fracture detection
+
+Mobile and cloud deployment
+
+Large-scale clinical validation
+
+PACS integration
+
+⚖️ Ethical Disclaimer
+
+This system is intended only as a clinical decision-support tool and must not replace professional medical judgment.
+
+📖 Citation
+
+If you use this work, please cite:
+Haris Maqsood,
+Recall-Optimized Deep Learning Framework for Bone Fracture Detection,
+2026.
+👤 Author
+
+Haris Maqsood
+Department of Computer Science / Artificial Intelligence
+
+📜 License
+
+This project is released for academic and research purposes only.
+
+
+---
+
+### What this version fixes
+- Clean **visual hierarchy**
+- Research-grade tone
+- Easy navigation for evaluators
+- Looks like a **published research prototype**
+- Matches IEEE / Springer expectations
+
+---
+
+### Next (recommended)
+I can:
+1. Design **banner.png**  
+2. Draw **architecture.png**  
+3. Create **demo.gif script**  
+4. Add **GitHub badges & topics**  
+5. Align README with **IEEE reproducibility checklist**
+
+Tell me which one you want first.
