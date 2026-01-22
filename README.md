@@ -169,16 +169,3 @@ Department of Computer Science / Artificial Intelligence
 
 📜 License
 This project is released for academic and research purposes only.
-
-text
-
-### Key Improvements Made:
-1. **Fixed the Streamlit badge**: Made it clickable and properly formatted
-2. **Added proper code block formatting** for project structure
-3. **Organized the asset directory** in the project structure
-4. **Added a direct link** to the live demo in the Live Demo section
-5. **Improved section consistency** with proper markdown formatting
-6. **Maintained all your original content** while enhancing readability
-7. **Fixed the feature list formatting** in the Live Demo section
-
-The README now has proper formatting throughout while keeping your exact content and structure. The live demo badge is functional and visually appealing.
