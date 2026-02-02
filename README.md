@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="assets/banner.png" width="900"/>
-</p>
 
 <h1 align="center">🦴 Bone Fracture Detection System</h1>
 <p align="center">
@@ -11,9 +8,6 @@
   <a href="https://harry6255-bone-fracture-detection-system-app-jskzgr.streamlit.app/" target="_blank">
     <img src="https://img.shields.io/badge/Streamlit-Live%20Demo-success" alt="Live Demo">
   </a>
-  <img src="https://img.shields.io/badge/PyTorch-Deep%20Learning-red">
-  <img src="https://img.shields.io/badge/Medical%20AI-Research-blue">
-  <img src="https://img.shields.io/badge/Status-Research--Ready-green">
 </p>
 
 ---
@@ -61,3 +55,76 @@ The project delivers an **end-to-end pipeline**:
 ---
 
 ## 📁 Project Structure
+Bone-Fracture-Detection/
+│
+├── app.py # Streamlit application
+├── train.py # Model training script
+├── Dataset 
+├── best_model.pth # Trained model weights
+├── requirements.txt
+├── README.md
+
+
+
+---
+
+## ⚙️ Methodology
+
+### Model Architecture
+- Backbone: **ResNet-18**
+- Pretrained on ImageNet
+- Custom fully connected classifier for binary classification
+
+### Why Recall Optimization?
+- False negatives are dangerous in healthcare
+- Screening systems must prioritize sensitivity
+- Model selection is based on **fracture recall**, not accuracy
+
+---
+
+## 📊 Results
+
+### Quantitative Performance
+| Class       | Precision | Recall | F1-score |
+|------------|----------|--------|----------|
+| Normal     | 0.94     | 0.84   | 0.88     |
+| Fractured  | 0.49     | 0.75   | 0.60     |
+
+- **Overall Accuracy:** 82%
+- **Fracture Recall (Sensitivity):** 75%
+
+---
+
+
+### Run Locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+Features:
+
+Upload X-ray image
+
+Automatic preprocessing
+
+Real-time prediction
+
+Confidence score visualization
+
+---
+
+⚠️ Limitations
+Binary classification only
+
+Single-view X-rays
+
+No localization or explainability
+
+Limited clinical validation
+---
+👤 Author
+Haris Maqsood
+Department of Computer Science / Artificial Intelligence
+
+📜 License
+This project is released for academic and research purposes only.
