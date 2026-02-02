@@ -694,7 +694,7 @@ else:
                     
                     # Confidence Assessment
                     if confidence >= 85:
-                        conf_assessment = "✅ High Confidence"
+                        conf_assessment = " High Confidence"
                         conf_color = "#10b981"
                     elif confidence >= 70:
                         conf_assessment = "⚠️ Moderate Confidence"
