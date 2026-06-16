@@ -19,7 +19,7 @@ The project delivers an **end-to-end pipeline**:
 - Data preprocessing
 - Model training and evaluation
 - Recall-focused optimization
-- Real-time deployment via a web interface
+- Real-time deployment via streamlit. 
 
 ---
 
@@ -47,10 +47,7 @@ The project delivers an **end-to-end pipeline**:
 - **Dataset Name:** FracAtlas  
 - **Modality:** X-ray images  
 - **Classes:** Fractured, Non-fractured  
-- **Challenge:** Severe class imbalance  
-
-> ⚠️ The dataset is not included in this repository.  
-> Please download it separately and organize it as shown below.
+- **Challenge:** Severe class imbalance
 
 ---
 
